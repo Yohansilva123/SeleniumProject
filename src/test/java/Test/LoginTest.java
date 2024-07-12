@@ -15,5 +15,6 @@ public class LoginTest extends BaseTest {
         SoftAssert softAssert = new SoftAssert();
         LoginPage.login(UserCredentials.validLoginUserName, UserCredentials.validLoginUserPassword);
         softAssert.assertTrue(HomePage.isHomeIconVisible(), "Home button is not visible");
+        HomePage.selectItemByName("Sauce Labs Backpack");
     }
 }
